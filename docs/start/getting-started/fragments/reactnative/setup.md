@@ -5,14 +5,14 @@ To start off, you'll need a React Native project. If you have an existing projec
 To get started, initialize a new React Native project.
 
  ###  Using Expo
-```sh
+```bash
 npm install -g expo-cli  
 expo init RNAmplify
 ```
 
 ###  Using the React Native CLI
 
-```sh
+```bash
 npx react-native init RNAmplify
 ```
 
@@ -20,14 +20,14 @@ npx react-native init RNAmplify
 
 You are now ready to initialize a new Amplify project. To do so, change into the project directory
 
-```sh
+```bash
 cd RNAmplify
 ```
 
 and use the Amplify CLI to create the project:
 
-```sh
-amplify init
+```console
+$ amplify init
 
 ? Enter a name for the project: rnamplify
 ? Enter a name for the environment: demo
@@ -57,7 +57,7 @@ Next, install the local Amplify dependencies. The directions here will depend on
 
 With Expo, you only have to install the dependencies and then move on to the next step - [__Set up the frontend__](#set-up-the-frontend).
 
-```sh
+```bash
 npm install aws-amplify aws-amplify-react-native @react-native-community/netinfo
 
 # or
@@ -69,7 +69,7 @@ yarn add aws-amplify aws-amplify-react-native @react-native-community/netinfo
 
 If you've created the project using the React Native CLI, install these dependencies:
 
-```sh
+```bash
 npm install aws-amplify aws-amplify-react-native amazon-cognito-identity-js react-native-vector-icons @react-native-community/netinfo
 
 # or
@@ -79,7 +79,7 @@ yarn add aws-amplify aws-amplify-react-native amazon-cognito-identity-js react-n
 
 You will next need to change into the the ios directory and install the pod dependencies:
 
-```sh
+```bash
 cd ios
 pod install
 cd ../
